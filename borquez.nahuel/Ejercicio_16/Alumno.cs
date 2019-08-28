@@ -8,14 +8,13 @@ namespace Ejercicio_16
 {
     class Alumno
     {
-        byte nota1;
-        byte nota2;
-        float notaFinal;
+        private byte nota1;//los atributos privados llevan _ al principio
+        private byte nota2;
+        private float notaFinal;
         public string nombre;
         public string apellido;
         public int legajo;
 
-        Random numeroRandom = new Random();
         //constructor
         public Alumno(string nombre, string apellido, int legajo)
         {
@@ -24,34 +23,39 @@ namespace Ejercicio_16
             this.legajo = legajo;
         }
         //metodos
-        void CalcularFinal()
+        public void CalcularFinal()
         {
             this.notaFinal = -1;
-            if(this.nota1 >= 4 && this.nota2 >= 4)
+            if (this.nota1 >= 4 && this.nota2 >= 4)
             {
-                  //next retorna un doble, lo tengo que castear a float
-                this.notaFinal = numeroRandom.Next(1,10);//al ser un metodo de instancia no puedo hacer random.next
-                  //y como parametro recibe entre que valores puede ser el num
+                Random numeroRandom = new Random();
+                //next retorna un doble, lo tengo que castear a float
+                this.notaFinal = (float)numeroRandom.Next(1, 10);//al ser un metodo de instancia no puedo hacer random.next
+                                                                 //y como parametro recibe entre que valores puede ser el num
             }
         }
 
-        void Estudiar(byte notaUno, byte notaDos)
+        public void Estudiar(byte notaUno, byte notaDos)
         {
             this.nota1 = notaUno;
             this.nota2 = notaDos;
         }
 
-        string Mostrar()
+        public string Mostrar()
         {
-            if(this.notaFinal != -1)
+            string retorno = " " + this.legajo.ToString() + "   " + this.apellido + " " + this.nombre + " " + this.nota1 + " " + this.nota2 + "  ";
+
+            if (this.notaFinal == -1)
             {
-                return this.nombre + " " + this.apellido + " " + this.legajo + " " + this.nota1 + " " + this.nota2 + " " + this.notaFinal + " \n"; 
+                retorno += " Alumno desaprobado\n";
             }
             else
             {
-                return "Alumno desaprobado";
+                retorno += this.notaFinal + "\n";
             }
-              
+
+            return retorno;
+
         }
     }
 }

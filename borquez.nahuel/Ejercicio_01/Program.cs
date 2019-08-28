@@ -70,6 +70,7 @@ namespace Ejercicio_01
             Console.WriteLine("El maximo es: {0}", maximo);
             Console.WriteLine("El promedio es: {0}", promedio);
             Console.ReadKey();
+
         }
     }
 }

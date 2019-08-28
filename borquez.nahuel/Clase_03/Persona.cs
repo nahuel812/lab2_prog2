@@ -8,11 +8,12 @@ namespace Clase_03
 {
     class Persona
     {
+        //atributos no estaticos
         public string nombre;
         public string apellido;
         public int dni;
 
-        public Persona(string nombre, string apellido, int dni)
+        public Persona(string nombre, string apellido, int dni)//constructor 
         {
             this.nombre = nombre;
             this.apellido = apellido;
@@ -21,7 +22,7 @@ namespace Clase_03
 
         public string Mostrar()
         {
-            //al no se atributos staticos uso this
+            //al no ser atributos estaticos uso this
             return this.nombre + " " + this.apellido + " " + this.dni + "\n"; 
         }
     }
