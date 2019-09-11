@@ -42,7 +42,6 @@ namespace Clase_06.Entidades
         public static bool operator ==(Tempera temperaUno, Tempera temperaDos)
         {
             bool retorno = false;
-            //if (!temperaUno.Equals(null) && !temperaDos.Equals(null))
             if(!Object.Equals(temperaUno,null) && !Object.Equals(temperaDos,null))
             {
                 if (temperaUno._marca == temperaDos._marca && temperaUno._color == temperaDos._color)
@@ -52,8 +51,6 @@ namespace Clase_06.Entidades
             }
             else
             {
-                //if (temperaUno.Equals(null) && temperaDos.Equals(null))
-
                 if (Object.Equals(temperaUno, null) && Object.Equals(temperaDos, null))
                 {
                     retorno = true;
@@ -75,7 +72,6 @@ namespace Clase_06.Entidades
         /// <returns></returns>
         public static Tempera operator +(Tempera temperaUno, int cant)
         {
-            //if (!temperaUno.Equals(null))
             if(!Object.Equals(temperaUno,null))
             {
                 if( cant > 0)
@@ -94,7 +90,6 @@ namespace Clase_06.Entidades
         /// <returns></returns>
         public static Tempera operator +(Tempera temperaUno, Tempera temperaDos)
         {
-            //if (!temperaUno.Equals(null) && !temperaDos.Equals(null))
             if(!Object.Equals(temperaUno,null) && !Object.Equals(temperaDos,null))
             {
                 if (temperaUno == temperaDos)
@@ -108,7 +103,6 @@ namespace Clase_06.Entidades
 
         public static Tempera operator -(Tempera temperaUno, int cant)
         {
-            //if (!temperaUno.Equals(null))
             if (!Object.Equals(temperaUno, null))
             {
                 if (cant > 0)
@@ -135,8 +129,7 @@ namespace Clase_06.Entidades
             }
             return temperaUno;
         }
-
-
+        
 
     }
 }

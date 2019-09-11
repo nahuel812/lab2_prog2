@@ -35,12 +35,11 @@ namespace Clase_07.WindowsForm
         {
             TemperaForm FrmTempera = new TemperaForm();//creo el from de temperas.
             FrmTempera.ShowDialog();//Muestro el form de tempera y hasta que no se cierre la ventana no avanza el programa
-            //string buffer;
-
-            //Pregunto si ha cargado algun dato. (Al presionar boton OK)
+            
+            //Pregunto si ha cargado algun dato. (Al presionar boton Aceptar)
             if (FrmTempera.DialogResult == DialogResult.OK)
             {
-                //buffer = FrmTempera.MiTempera;//uso la property para traer los datos de tempera
+                //uso la property para traer los datos de tempera
                 miPaleta += FrmTempera.MiTempera;
                 //this.lstPaleta.Items.Add((string)miPaleta);//Agrega a la listBox un item/los muestro en la lstbox           
                 
@@ -59,24 +58,22 @@ namespace Clase_07.WindowsForm
         {
             TemperaForm FrmTempera = new TemperaForm();
             FrmTempera.ShowDialog();
-            //string buffer;
             
             if (FrmTempera.DialogResult == DialogResult.OK)
             {
-                //buffer = FrmTempera.MiTempera;//uso la property para traer los datos de tempera
+                //uso la property para traer los datos de tempera
                 miPaleta += FrmTempera.MiTempera;
                 //this.lstPaleta.Items.Add((string)miPaleta);//Agrega a la listBox un item/los muestro en la lstbox           
 
+                //refresco la lista
                 this.lstPaleta.Items.Clear();
                 for (int i = 0; i < miPaleta.PropCantidad; i++)
                 {
                     if (!Object.Equals(miPaleta[i], null))
                     {
-                        
                         this.lstPaleta.Items.Add((string)miPaleta[i]);
                     }
                 }
-
             }
 
         }
@@ -86,11 +83,10 @@ namespace Clase_07.WindowsForm
             TemperaForm FrmTempera = new TemperaForm();
             FrmTempera.ShowDialog();
             
-
+            
             if (FrmTempera.DialogResult == DialogResult.OK)
             {
                 miPaleta -= FrmTempera.MiTempera;
-
             }
         }
 

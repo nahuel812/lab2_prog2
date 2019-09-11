@@ -52,13 +52,13 @@ namespace Clase_06.Entidades
         {
             return paletaUno.Mostrar();
         }
+
         //sobrecargas de operadores
         public static bool operator ==(Paleta paletaUno,Tempera temperaUno)
         {
             bool retorno = false;
             int i;
-
-            //if(!paletaUno.Equals(null) && !temperaUno.Equals(null))
+            
             if (!Object.Equals(paletaUno, null) && !Object.Equals(temperaUno, null))
             {
                 for (i = 0; i < paletaUno._colores.Length; i++)
@@ -72,8 +72,6 @@ namespace Clase_06.Entidades
             }
             else
             {
-                //if (paletaUno.Equals(null) && temperaUno.Equals(null))
-
                 if (!Object.Equals(paletaUno, null) && !Object.Equals(temperaUno, null))
                 {
                     retorno = true;
@@ -114,7 +112,7 @@ namespace Clase_06.Entidades
             int indice = -1;
             for (int i = 0; i <= this._colores.Length; i++)
             {
-                //if (this._colores[i].Equals(null))//cuando es null esta libre
+                //cuando es null esta libre
                 if (this._colores[i] == null)
                 {
                     indice = i;//retorno el indice
