@@ -70,12 +70,37 @@ namespace Clase_10.WindowsForm
             for (int i = 0; i < _catedraLista.Alumnos.Count(); i++)
             {
                 lstAlumnos.Items.Add(Alumno.Mostrar(_catedraLista.Alumnos[i]));
+                //lstAlumnos.Items.Add(_catedraLista.ToString());//muestra la lista de alumno
             }
         }
         private void cmbOrdenamiento_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.ActualizarListadoAlumno();//uso el metodo que actualiza la lista cada vez que se elije otro ordenamiento
         }
-        
+
+        private void btnCalificar_Click(object sender, EventArgs e)
+        {
+            int indice;
+            indice = this.lstAlumnos.SelectedIndex;
+
+            FrmAlumnoCalificado frmAlumnoCalificado = new FrmAlumnoCalificado(_catedraLista.Alumnos[indice]);
+            frmAlumnoCalificado.ShowDialog();
+            
+
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            int indice;
+            indice = this.lstAlumnos.SelectedIndex;
+            
+
+            FrmAlumno frmAlumno = new FrmAlumno(_catedraLista.Alumnos[indice]);//tomo un alumno de catedra en el indice seleccionado
+            frmAlumno.ShowDialog();
+            
+            //if()
+
+        }
     }
 }

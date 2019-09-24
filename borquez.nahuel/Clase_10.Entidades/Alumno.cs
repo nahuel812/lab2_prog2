@@ -40,6 +40,11 @@ namespace Clase_10.Entidades
             return alumnoSb.ToString();
         }
 
+        //sobrecarga del ToString
+        public override string ToString()
+        {
+            return Alumno.Mostrar(this);//llama al mostrar de alumno y muestra el elem
+        }
 
         public static bool operator ==(Alumno alumnoUno, Alumno alumnoDos)
         {
@@ -77,5 +82,7 @@ namespace Clase_10.Entidades
         {
             return OrdenarPorLegajoAsc(alumnoUno, alumnoDos) * -1;
         }
+
+
     }
 }

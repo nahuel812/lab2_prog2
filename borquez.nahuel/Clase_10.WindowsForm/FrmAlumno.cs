@@ -29,14 +29,22 @@ namespace Clase_10.WindowsForm
             this.cmbTipoExamen.DropDownStyle = ComboBoxStyle.DropDownList;
             StartPosition = FormStartPosition.CenterScreen;
         }
+        //otro constructor del frmAlumno que inicie el alumno en el frm
+        public FrmAlumno(Alumno alumnoUno):this()
+        {
+            this.txtNombre.Text = alumnoUno.Nombre;
+            this.txtApellido.Text = alumnoUno.Apellido;
+            this.txtLegajo.Text = alumnoUno.Legajo.ToString();
+            this.cmbTipoExamen.Text = alumnoUno.Examen.ToString();
 
+        }
         
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnAceptar_Click(object sender, EventArgs e)
+        protected virtual void btnAceptar_Click(object sender, EventArgs e)//hacerlo virtual para poder modificarlo en alumnoCalificado
         {
             miAlumno = new Alumno(this.txtNombre.Text, this.txtApellido.Text, Convert.ToInt32(this.txtLegajo.Text), (ETipoExamen)(this.cmbTipoExamen.SelectedItem));
 

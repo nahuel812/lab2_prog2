@@ -57,7 +57,7 @@
             // cToolStripMenuItem
             // 
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.cToolStripMenuItem.Text = "Cátedra";
             this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 

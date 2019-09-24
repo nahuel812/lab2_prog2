@@ -154,11 +154,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtLegajo;
-        private System.Windows.Forms.ComboBox cmbTipoExamen;
-        private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.Button btnCancelar;
+        protected System.Windows.Forms.TextBox txtNombre;
+        protected System.Windows.Forms.TextBox txtApellido;
+        protected System.Windows.Forms.TextBox txtLegajo;
+        protected System.Windows.Forms.ComboBox cmbTipoExamen;
+        protected System.Windows.Forms.Button btnAceptar;
+        protected System.Windows.Forms.Button btnCancelar;
     }
 }

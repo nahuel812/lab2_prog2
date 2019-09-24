@@ -15,6 +15,15 @@ namespace Clase_10.Entidades
             this.alumnos = new List<Alumno>();
         }
 
+        public override string ToString()
+        {
+            foreach (Alumno auxAlum in alumnos)
+            {
+                auxAlum.ToString();
+            }
+            return alumnos.Count.ToString();
+        }
+
         #region Sobrecargas
 
         public static bool operator ==(Catedra catedra, Alumno alumno)
