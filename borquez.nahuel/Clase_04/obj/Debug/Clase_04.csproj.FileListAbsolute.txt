@@ -1,0 +1,3 @@
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04\obj\Debug\Clase_04.csprojAssemblyReference.cache
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04\obj\Debug\Clase_04.exe.config
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04\obj\Debug\Clase_04.csproj.CoreCompileInputs.cache

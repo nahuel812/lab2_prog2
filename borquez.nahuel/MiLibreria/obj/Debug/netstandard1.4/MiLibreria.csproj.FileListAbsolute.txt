@@ -1,0 +1,7 @@
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\bin\Debug\netstandard1.4\MiLibreria.deps.json
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\bin\Debug\netstandard1.4\MiLibreria.dll
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\bin\Debug\netstandard1.4\MiLibreria.pdb
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\obj\Debug\netstandard1.4\MiLibreria.csproj.CoreCompileInputs.cache
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\obj\Debug\netstandard1.4\MiLibreria.AssemblyInfo.cs
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\obj\Debug\netstandard1.4\MiLibreria.dll
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\MiLibreria\obj\Debug\netstandard1.4\MiLibreria.pdb

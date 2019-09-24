@@ -6,3 +6,11 @@ C:\Users\Nahuel\source\repos\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstan
 C:\Users\Nahuel\source\repos\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.dll
 C:\Users\Nahuel\source\repos\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.pdb
 C:\Users\Nahuel\source\repos\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.csprojAssemblyReference.cache
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\bin\Debug\netstandard1.4\Clase_05.Entidades.deps.json
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\bin\Debug\netstandard1.4\Clase_05.Entidades.dll
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\bin\Debug\netstandard1.4\Clase_05.Entidades.pdb
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.csprojAssemblyReference.cache
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.csproj.CoreCompileInputs.cache
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.AssemblyInfo.cs
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.dll
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_05.Entidades\obj\Debug\netstandard1.4\Clase_05.Entidades.pdb

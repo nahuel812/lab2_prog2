@@ -46,7 +46,6 @@
   <ItemGroup>
     <Compile Include="MiClase.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,6 +59,9 @@
       <Project>{0cf65cd5-81b4-488a-be41-239279106d4e}</Project>
       <Name>MiLibreria</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

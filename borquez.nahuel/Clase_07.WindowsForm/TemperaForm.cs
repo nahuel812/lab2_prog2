@@ -41,8 +41,6 @@ namespace Clase_07.WindowsForm
             this.txtMarca.Text = marca;
             this.txtCant.Text = cant.ToString();
             this.cmbColor.SelectedItem = color ;
-
-
         }
 
 
