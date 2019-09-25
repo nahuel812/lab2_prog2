@@ -22,7 +22,12 @@ namespace Clase_10.Entidades
 
         public string Mostrar()
         {
-            return Alumno.Mostrar(this) + " - Nota:" + this.Nota.ToString()+ "\n";
+            return Alumno.Mostrar(this) + " - Nota:" + this.Nota.ToString();
+        }
+
+        public override string ToString()
+        {
+            return Mostrar();
         }
     }
 }

@@ -35,21 +35,23 @@ namespace Clase_10.WindowsForm
             this.txtNombre.Text = alumnoUno.Nombre;
             this.txtApellido.Text = alumnoUno.Apellido;
             this.txtLegajo.Text = alumnoUno.Legajo.ToString();
-            this.cmbTipoExamen.Text = alumnoUno.Examen.ToString();
+            this.cmbTipoExamen.SelectedIndex = (int)alumnoUno.Examen;
+            
+            this.txtLegajo.Enabled = false;
 
         }
         
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
 
-        protected virtual void btnAceptar_Click(object sender, EventArgs e)//hacerlo virtual para poder modificarlo en alumnoCalificado
+        private void btnAceptar_Click(object sender, EventArgs e)
         {
             miAlumno = new Alumno(this.txtNombre.Text, this.txtApellido.Text, Convert.ToInt32(this.txtLegajo.Text), (ETipoExamen)(this.cmbTipoExamen.SelectedItem));
 
             DialogResult = DialogResult.OK;
-            
         }
     }
 }

@@ -26,6 +26,7 @@ namespace Clase_10.WindowsForm
             this.cmbOrdenamiento.SelectedItem = ETipoOrdenamiento.LegajoAscendente;
             this.cmbOrdenamiento.DropDownStyle = ComboBoxStyle.DropDownList;
             StartPosition = FormStartPosition.CenterScreen;
+            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -39,7 +40,7 @@ namespace Clase_10.WindowsForm
                 {
                     ActualizarListadoAlumno();//actualizo la lista
                 }
-                else
+                else//sino muestro error
                 {
                     MessageBox.Show("No se puede cargar al alumno, ya se encuentra el legajo en sistema");
                 }
@@ -69,13 +70,33 @@ namespace Clase_10.WindowsForm
             
             for (int i = 0; i < _catedraLista.Alumnos.Count(); i++)
             {
-                lstAlumnos.Items.Add(Alumno.Mostrar(_catedraLista.Alumnos[i]));
-                //lstAlumnos.Items.Add(_catedraLista.ToString());//muestra la lista de alumno
+                if (!Object.Equals(_catedraLista.Alumnos.ElementAt(i), null))
+                {
+                    //lstAlumnos.Items.Add(Alumno.Mostrar(_catedraLista.Alumnos[i]));
+                    this.lstAlumnos.Items.Add(_catedraLista.Alumnos[i].ToString());//uso la sobrecarga del tostring
+                }
             }
         }
         private void cmbOrdenamiento_SelectedIndexChanged(object sender, EventArgs e)
         {
             this.ActualizarListadoAlumno();//uso el metodo que actualiza la lista cada vez que se elije otro ordenamiento
+        }
+
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            int indice;
+            indice = this.lstAlumnos.SelectedIndex;
+            
+            FrmAlumno frmAlumno = new FrmAlumno(_catedraLista.Alumnos[indice]);//tomo un alumno de catedra en el indice seleccionado
+            frmAlumno.ShowDialog();//muestro el frmAlumno para que el usuario lo modifique
+            
+            if(frmAlumno.DialogResult == DialogResult.OK)//si presiono aceptar 
+            {
+                _catedraLista.Alumnos[indice] = frmAlumno.Alumno;//agrego a la catedra el alumno modificado en ese indice
+                ActualizarListadoAlumno();
+            }
+
         }
 
         private void btnCalificar_Click(object sender, EventArgs e)
@@ -85,22 +106,25 @@ namespace Clase_10.WindowsForm
 
             FrmAlumnoCalificado frmAlumnoCalificado = new FrmAlumnoCalificado(_catedraLista.Alumnos[indice]);
             frmAlumnoCalificado.ShowDialog();
-            
 
-
+            if (frmAlumnoCalificado.DialogResult == DialogResult.OK)
+            {
+                if (_catedraLista - _catedraLista.Alumnos[indice])
+                {
+                    _listaAlumnosCalificados.Add(frmAlumnoCalificado.AlumnoCalificado);
+                    ActualizarListadoAlumno();
+                    ActualizarListadoAlumnosCalificados();
+                }
+            }
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void ActualizarListadoAlumnosCalificados()
         {
-            int indice;
-            indice = this.lstAlumnos.SelectedIndex;
-            
-
-            FrmAlumno frmAlumno = new FrmAlumno(_catedraLista.Alumnos[indice]);//tomo un alumno de catedra en el indice seleccionado
-            frmAlumno.ShowDialog();
-            
-            //if()
-
+            lstAlumnosCalificados.Items.Clear();
+            foreach (AlumnoCalificado aux in _listaAlumnosCalificados)
+            {
+                lstAlumnosCalificados.Items.Add(AlumnoCalificado.Mostrar(aux));
+            }
         }
     }
 }

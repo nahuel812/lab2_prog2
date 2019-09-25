@@ -14,14 +14,14 @@ namespace Clase_10.Entidades
         protected int legajo;
         protected string nombre;
         #endregion
-        
 
+        #region propiedades
         public string Apellido { get { return this.apellido; } }
         public ETipoExamen Examen { get { return this.examen; } }
         public int Legajo { get { return this.legajo; } }
         public string Nombre { get { return this.nombre; } }
+        #endregion
 
-        
         public Alumno(string nombre, string apellido, int legajo, ETipoExamen examen)
         {
             this.nombre = nombre;
@@ -32,12 +32,16 @@ namespace Clase_10.Entidades
 
         public static string Mostrar(Alumno alumnoUno)
         {
-            StringBuilder alumnoSb = new StringBuilder();//uso el string builder
+            /*
+            //con string builder
+            StringBuilder alumnoSb = new StringBuilder();
             alumnoSb.AppendFormat("Nombre: {0}", alumnoUno.Nombre);
             alumnoSb.AppendFormat(" - Apellido: {0}", alumnoUno.Apellido);
             alumnoSb.AppendFormat(" - Legajo: {0}", alumnoUno.Legajo);
             alumnoSb.AppendFormat(" - Examen: {0}", alumnoUno.Examen);
             return alumnoSb.ToString();
+            */
+            return "Nombre: " + alumnoUno.nombre + " Apellido: " + alumnoUno.apellido + " Legajo: " + alumnoUno.legajo + " Examen: " + alumnoUno.examen;
         }
 
         //sobrecarga del ToString

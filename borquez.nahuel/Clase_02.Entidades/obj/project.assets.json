@@ -3827,19 +3827,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alumno\\.nuget\\packages\\": {}
+    "C:\\Users\\Nahuel\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\borquez.n\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
+      "projectUniqueName": "C:\\Users\\Nahuel\\Desktop\\laboprog2\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
       "projectName": "Clase_02.Entidades",
-      "projectPath": "D:\\borquez.n\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
-      "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "D:\\borquez.n\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\obj\\",
+      "projectPath": "C:\\Users\\Nahuel\\Desktop\\laboprog2\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
+      "packagesPath": "C:\\Users\\Nahuel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nahuel\\Desktop\\laboprog2\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nahuel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3853,11 +3853,6 @@
         "netstandard1.4": {
           "projectReferences": {}
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {

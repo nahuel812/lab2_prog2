@@ -36,6 +36,10 @@
             // 
             this.txtNombre.ReadOnly = true;
             // 
+            // btnAceptar
+            // 
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
+            // 
             // txtNota
             // 
             this.txtNota.Location = new System.Drawing.Point(15, 191);
@@ -61,6 +65,8 @@
             this.Controls.Add(this.txtNota);
             this.Name = "FrmAlumnoCalificado";
             this.Text = "FrmAlumnoCalificado";
+            this.Controls.SetChildIndex(this.btnAceptar, 0);
+            this.Controls.SetChildIndex(this.btnCancelar, 0);
             this.Controls.SetChildIndex(this.txtNombre, 0);
             this.Controls.SetChildIndex(this.txtApellido, 0);
             this.Controls.SetChildIndex(this.txtLegajo, 0);

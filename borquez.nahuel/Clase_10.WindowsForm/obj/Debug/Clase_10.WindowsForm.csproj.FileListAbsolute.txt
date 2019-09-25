@@ -141,3 +141,4 @@ D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.WindowsForm\obj\Debug\Clase_10.W
 D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.WindowsForm\obj\Debug\Clase_10.WindowsForm.exe
 D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.WindowsForm\obj\Debug\Clase_10.WindowsForm.pdb
 D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.WindowsForm\obj\Debug\Clase_10.WindowsForm.FrmAlumnoCalificado.resources
+C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_10.WindowsForm\obj\Debug\Clase_10.WindowsForm.FrmAlumnoCalificado.resources
