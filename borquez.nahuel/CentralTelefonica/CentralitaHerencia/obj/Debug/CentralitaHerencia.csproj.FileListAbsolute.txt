@@ -3,3 +3,8 @@ C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaHerencia\bin\Debug\Centralit
 C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaHerencia\obj\Debug\CentralitaHerencia.csproj.CoreCompileInputs.cache
 C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaHerencia\obj\Debug\CentralitaHerencia.dll
 C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaHerencia\obj\Debug\CentralitaHerencia.pdb
+D:\nahuelborquez\lab2_prog2\borquez.nahuel\CentralTelefonica\CentralitaHerencia\bin\Debug\CentralitaHerencia.dll
+D:\nahuelborquez\lab2_prog2\borquez.nahuel\CentralTelefonica\CentralitaHerencia\bin\Debug\CentralitaHerencia.pdb
+D:\nahuelborquez\lab2_prog2\borquez.nahuel\CentralTelefonica\CentralitaHerencia\obj\Debug\CentralitaHerencia.csproj.CoreCompileInputs.cache
+D:\nahuelborquez\lab2_prog2\borquez.nahuel\CentralTelefonica\CentralitaHerencia\obj\Debug\CentralitaHerencia.dll
+D:\nahuelborquez\lab2_prog2\borquez.nahuel\CentralTelefonica\CentralitaHerencia\obj\Debug\CentralitaHerencia.pdb

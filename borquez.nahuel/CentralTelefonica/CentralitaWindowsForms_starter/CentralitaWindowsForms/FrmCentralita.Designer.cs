@@ -31,7 +31,7 @@
             this.lstVisor = new System.Windows.Forms.ListBox();
             this.btnLocal = new System.Windows.Forms.Button();
             this.btnProvincia = new System.Windows.Forms.Button();
-            this.cboOrdenamiento = new System.Windows.Forms.ComboBox();
+            this.cmbOrdenamiento = new System.Windows.Forms.ComboBox();
             this.lblLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -66,13 +66,17 @@
             this.btnProvincia.UseVisualStyleBackColor = true;
             this.btnProvincia.Click += new System.EventHandler(this.BtnProvincia_Click);
             // 
-            // cboOrdenamiento
+            // cmbOrdenamiento
             // 
-            this.cboOrdenamiento.FormattingEnabled = true;
-            this.cboOrdenamiento.Location = new System.Drawing.Point(438, 185);
-            this.cboOrdenamiento.Name = "cboOrdenamiento";
-            this.cboOrdenamiento.Size = new System.Drawing.Size(190, 21);
-            this.cboOrdenamiento.TabIndex = 4;
+            this.cmbOrdenamiento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbOrdenamiento.FormattingEnabled = true;
+            this.cmbOrdenamiento.Items.AddRange(new object[] {
+            "DuracionAsc",
+            "DuracionDes"});
+            this.cmbOrdenamiento.Location = new System.Drawing.Point(438, 185);
+            this.cmbOrdenamiento.Name = "cmbOrdenamiento";
+            this.cmbOrdenamiento.Size = new System.Drawing.Size(190, 21);
+            this.cmbOrdenamiento.TabIndex = 4;
             // 
             // lblLabel
             // 
@@ -89,7 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(640, 218);
             this.Controls.Add(this.lblLabel);
-            this.Controls.Add(this.cboOrdenamiento);
+            this.Controls.Add(this.cmbOrdenamiento);
             this.Controls.Add(this.btnProvincia);
             this.Controls.Add(this.btnLocal);
             this.Controls.Add(this.lstVisor);
@@ -103,12 +107,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lstVisor;
-        private System.Windows.Forms.Button btnLocal;
-        private System.Windows.Forms.Button btnProvincia;
-        private System.Windows.Forms.ComboBox cboOrdenamiento;
         private System.Windows.Forms.Label lblLabel;
+        protected System.Windows.Forms.ListBox lstVisor;
+        protected System.Windows.Forms.Button btnLocal;
+        protected System.Windows.Forms.Button btnProvincia;
+        protected System.Windows.Forms.ComboBox cmbOrdenamiento;
     }
 }
 

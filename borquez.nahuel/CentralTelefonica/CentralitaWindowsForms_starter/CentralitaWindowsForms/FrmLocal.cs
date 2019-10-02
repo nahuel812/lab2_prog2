@@ -11,23 +11,29 @@ using CentralitaHerencia;
 
 namespace CentralitaWindowsForms
 {
-    public partial class FrmLocal : Llamada
+    public partial class FrmLocal : FrmLlamada
     {
         private Local nuevaLlamadaLocal;
+
         public Local Local { get { return this.nuevaLlamadaLocal; } }
+
         public FrmLocal()
         {
             InitializeComponent();
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        protected override void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+            DialogResult = DialogResult.Cancel;
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
+        protected override void btnAceptar_Click(object sender, EventArgs e)
         {
-            nuevaLlamadaLocal = new Local(this.textBox1.Text, (float)Convert.ToDouble(this.txtDuracion.Text), this.textBox2.Text, (float)Convert.ToDouble(this.txtCosto.Text));
+            base.miLlamada = new Local(this.txtNroOrigen.Text, Convert.ToSingle(this.txtDuracion.Text), this.txtNroDestino.Text, Convert.ToSingle(this.txtCosto.Text));
+            //nuevaLlamadaLocal = new Local(this.txtNroOrigen.Text, Convert.ToSingle(this.txtDuracion.Text), this.txtNroDestino.Text, Convert.ToSingle(this.txtCosto.Text));
+
+            //base.btnAceptar_Click();//lamar al base para el dialogresult
             DialogResult = DialogResult.OK;
         }
     }

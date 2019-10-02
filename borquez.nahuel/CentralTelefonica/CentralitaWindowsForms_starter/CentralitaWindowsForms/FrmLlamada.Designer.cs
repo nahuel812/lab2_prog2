@@ -1,6 +1,6 @@
 namespace CentralitaWindowsForms
 {
-    partial class Llamada
+    partial class FrmLlamada
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@ namespace CentralitaWindowsForms
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNroOrigen = new System.Windows.Forms.TextBox();
+            this.txtNroDestino = new System.Windows.Forms.TextBox();
             this.txtDuracion = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -46,6 +46,7 @@ namespace CentralitaWindowsForms
             this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "&Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
@@ -55,6 +56,7 @@ namespace CentralitaWindowsForms
             this.btnCancelar.TabIndex = 1;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label1
             // 
@@ -74,19 +76,19 @@ namespace CentralitaWindowsForms
             this.label2.TabIndex = 3;
             this.label2.Text = "Número Destino:";
             // 
-            // textBox1
+            // txtNroOrigen
             // 
-            this.textBox1.Location = new System.Drawing.Point(15, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtNroOrigen.Location = new System.Drawing.Point(15, 39);
+            this.txtNroOrigen.Name = "txtNroOrigen";
+            this.txtNroOrigen.Size = new System.Drawing.Size(188, 20);
+            this.txtNroOrigen.TabIndex = 4;
             // 
-            // textBox2
+            // txtNroDestino
             // 
-            this.textBox2.Location = new System.Drawing.Point(15, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtNroDestino.Location = new System.Drawing.Point(15, 90);
+            this.txtNroDestino.Name = "txtNroDestino";
+            this.txtNroDestino.Size = new System.Drawing.Size(188, 20);
+            this.txtNroDestino.TabIndex = 5;
             // 
             // txtDuracion
             // 
@@ -111,8 +113,8 @@ namespace CentralitaWindowsForms
             this.ClientSize = new System.Drawing.Size(215, 262);
             this.Controls.Add(this.txtDuracion);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNroDestino);
+            this.Controls.Add(this.txtNroOrigen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
@@ -130,8 +132,8 @@ namespace CentralitaWindowsForms
         private System.Windows.Forms.Label label3;
         protected System.Windows.Forms.Button btnAceptar;
         protected System.Windows.Forms.Button btnCancelar;
-        protected System.Windows.Forms.TextBox textBox1;
-        protected System.Windows.Forms.TextBox textBox2;
+        protected System.Windows.Forms.TextBox txtNroOrigen;
+        protected System.Windows.Forms.TextBox txtNroDestino;
         protected System.Windows.Forms.TextBox txtDuracion;
     }
 }

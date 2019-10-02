@@ -11,28 +11,37 @@ using CentralitaHerencia;
 
 namespace CentralitaWindowsForms
 {
-    public partial class FrmProvincia : Llamada
+    public partial class FrmProvincia : FrmLlamada
     {
         private Provincial nuevaLlamadaProvincia;
+
         public Provincial Provincia { get { return this.nuevaLlamadaProvincia; } }
+
         public FrmProvincia()
         {
             InitializeComponent();
-            foreach(Franja aux in Enum.GetValues(typeof(Franja)))
+
+            foreach(Franja franjaAux in Enum.GetValues(typeof(Franja)))
             {
-                cmbFranja.Items.Add(aux);
+                cmbFranja.Items.Add(franjaAux);
             }
             this.cmbFranja.SelectedItem = Franja.Franja_1;
+            this.cmbFranja.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        private void BtnCancelar_Click(object sender, EventArgs e)
+        protected override void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+            DialogResult = DialogResult.Cancel;
         }
 
-        private void BtnAceptar_Click(object sender, EventArgs e)
+        protected override void btnAceptar_Click(object sender, EventArgs e)
         {
-            nuevaLlamadaProvincia = new Provincial(this.textBox1.Text, (Franja)this.cmbFranja.SelectedIndex, (float)Convert.ToDouble(this.txtDuracion.Text), this.textBox2.Text);
+            base.miLlamada = new Provincial(this.txtNroOrigen.Text, (Franja)this.cmbFranja.SelectedIndex, Convert.ToSingle(this.txtDuracion.Text), this.txtNroDestino.Text);
+            //nuevaLlamadaProvincia = new Provincial(this.txtNroOrigen.Text, (Franja)this.cmbFranja.SelectedIndex, Convert.ToSingle(this.txtDuracion.Text), this.txtNroDestino.Text);
+
+            //guardarlo en el atributo de tipo llamada
+            ///base.btnAceptar_Click();//tengo que llamar al base para el dialogresult
             DialogResult = DialogResult.OK;
         }
     }

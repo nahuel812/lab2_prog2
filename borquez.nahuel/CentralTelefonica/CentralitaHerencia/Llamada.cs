@@ -47,9 +47,14 @@ namespace CentralitaHerencia
             return Sb.ToString();
         }
 
-        public static int OrdenarPorDuracion(Llamada uno, Llamada dos)
+        public static int OrdenarPorDuracion(Llamada uno, Llamada dos)//de manera ascendente
         {
             return string.Compare(uno.Duracion.ToString(), dos.Duracion.ToString());
+        }
+
+        public static int OrdenarPorDuracionDes(Llamada uno, Llamada dos)
+        {
+            return OrdenarPorDuracion(uno, dos) * -1;
         }
         #endregion
 

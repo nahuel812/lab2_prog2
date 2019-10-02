@@ -8,7 +8,7 @@ namespace CentralitaHerencia
 {
     public class Centralita
     {
-        #region Atributos
+        #region ATRIBUTOS
 
         private List<Llamada> _listaLlamada;
         protected string _razonSocial;
@@ -142,7 +142,7 @@ namespace CentralitaHerencia
         #endregion
 
         
-        #region SOBREESCRITURA
+        #region SOBRESCRITURA
         
         public override string ToString()
         {

@@ -34,11 +34,11 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Click += new System.EventHandler(this.BtnAceptar_Click);
+            this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label4
             // 
@@ -68,8 +68,8 @@
             this.Text = "FrmLocal";
             this.Controls.SetChildIndex(this.btnAceptar, 0);
             this.Controls.SetChildIndex(this.btnCancelar, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
-            this.Controls.SetChildIndex(this.textBox2, 0);
+            this.Controls.SetChildIndex(this.txtNroOrigen, 0);
+            this.Controls.SetChildIndex(this.txtNroDestino, 0);
             this.Controls.SetChildIndex(this.txtDuracion, 0);
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.txtCosto, 0);

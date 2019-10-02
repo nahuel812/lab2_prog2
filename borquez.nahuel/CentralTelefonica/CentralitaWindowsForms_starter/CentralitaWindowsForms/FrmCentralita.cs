@@ -17,15 +17,23 @@ namespace CentralitaWindowsForms
         public FrmCentralita()
         {
             InitializeComponent();
-            this.cboOrdenamiento.Text = "OrdenarPorDuracion";
+
+            this.cmbOrdenamiento.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.cmbOrdenamiento.SelectedIndex = 0;
+            //this.cmbOrdenamiento.Text = "OrdenarPorDuracion";
+            
         }
 
         private void BtnLocal_Click(object sender, EventArgs e)
         {
+            //mediante la propiedad llamada de llamada tomo el dato, frmLlamada.Llamada 
             FrmLocal frmLocal = new FrmLocal();
             frmLocal.ShowDialog();
             if (frmLocal.DialogResult == DialogResult.OK)
+            {
                 central += frmLocal.Local;
+            }
+                
             actualizarListado();
         }
 
@@ -34,14 +42,18 @@ namespace CentralitaWindowsForms
             FrmProvincia frmProvincia = new FrmProvincia();
             frmProvincia.ShowDialog();
             if (frmProvincia.DialogResult == DialogResult.OK)
+            {
+                //usar la propiedad del frmllamada
                 central += frmProvincia.Provincia;
+            }
+                
             actualizarListado();
         }
 
         private void actualizarListado()
         {
-            this.lstVisor.Items.Clear();
-            central.OrdenarLLamadas();
+            this.lstVisor.Items.Clear();//limpio la lista
+            central.OrdenarLLamadas();//ordeno la lista
             for (int i = 0; i < central.Llamadas.Count(); i++)
             {
                 lstVisor.Items.Add(central.Llamadas[i]);

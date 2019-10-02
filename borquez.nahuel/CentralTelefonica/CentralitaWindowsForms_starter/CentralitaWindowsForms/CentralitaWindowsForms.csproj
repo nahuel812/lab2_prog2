@@ -57,11 +57,11 @@
     <Compile Include="FrmLocal.Designer.cs">
       <DependentUpon>FrmLocal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Llamada.cs">
+    <Compile Include="FrmLlamada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Llamada.Designer.cs">
-      <DependentUpon>Llamada.cs</DependentUpon>
+    <Compile Include="FrmLlamada.Designer.cs">
+      <DependentUpon>FrmLlamada.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmProvincia.cs">
       <SubType>Form</SubType>
@@ -77,8 +77,8 @@
     <EmbeddedResource Include="FrmLocal.resx">
       <DependentUpon>FrmLocal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Llamada.resx">
-      <DependentUpon>Llamada.cs</DependentUpon>
+    <EmbeddedResource Include="FrmLlamada.resx">
+      <DependentUpon>FrmLlamada.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProvincia.resx">
       <DependentUpon>FrmProvincia.cs</DependentUpon>
