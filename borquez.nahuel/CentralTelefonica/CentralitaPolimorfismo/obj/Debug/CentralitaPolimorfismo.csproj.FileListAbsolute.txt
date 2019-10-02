@@ -1,0 +1,10 @@
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaPolimorfismo.exe.config
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaPolimorfismo.exe
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaPolimorfismo.pdb
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaHerencia.dll
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\bin\Debug\CentralitaHerencia.pdb
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.csprojAssemblyReference.cache
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.csproj.CoreCompileInputs.cache
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.csproj.CopyComplete
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.exe
+C:\Users\Nahuel\Desktop\CentralTelefonica\CentralitaPolimorfismo\obj\Debug\CentralitaPolimorfismo.pdb
