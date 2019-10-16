@@ -182,11 +182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\nborquez\\lab2_prog2\\borquez.nahuel\\Clase_04.Entidades\\Clase_04.Entidades.csproj",
+      "projectUniqueName": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_04.Entidades\\Clase_04.Entidades.csproj",
       "projectName": "Clase_04.Entidades",
-      "projectPath": "D:\\nborquez\\lab2_prog2\\borquez.nahuel\\Clase_04.Entidades\\Clase_04.Entidades.csproj",
+      "projectPath": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_04.Entidades\\Clase_04.Entidades.csproj",
       "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "D:\\nborquez\\lab2_prog2\\borquez.nahuel\\Clase_04.Entidades\\obj\\",
+      "outputPath": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_04.Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
