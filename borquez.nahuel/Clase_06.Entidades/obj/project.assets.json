@@ -3708,11 +3708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_06.Entidades\\Clase_06.Entidades.csproj",
+      "projectUniqueName": "D:\\borqueznahuel\\lab2_prog2\\borquez.nahuel\\Clase_06.Entidades\\Clase_06.Entidades.csproj",
       "projectName": "Clase_06.Entidades",
-      "projectPath": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_06.Entidades\\Clase_06.Entidades.csproj",
+      "projectPath": "D:\\borqueznahuel\\lab2_prog2\\borquez.nahuel\\Clase_06.Entidades\\Clase_06.Entidades.csproj",
       "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_06.Entidades\\obj\\",
+      "outputPath": "D:\\borqueznahuel\\lab2_prog2\\borquez.nahuel\\Clase_06.Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",

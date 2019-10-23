@@ -3832,11 +3832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
+      "projectUniqueName": "D:\\borqueznahuel\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
       "projectName": "Clase_02.Entidades",
-      "projectPath": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
+      "projectPath": "D:\\borqueznahuel\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\Clase_02.Entidades.csproj",
       "packagesPath": "C:\\Users\\alumno\\.nuget\\packages\\",
-      "outputPath": "D:\\borqueznahuel2\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\obj\\",
+      "outputPath": "D:\\borqueznahuel\\lab2_prog2\\borquez.nahuel\\Clase_02.Entidades\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alumno\\AppData\\Roaming\\NuGet\\NuGet.Config",
