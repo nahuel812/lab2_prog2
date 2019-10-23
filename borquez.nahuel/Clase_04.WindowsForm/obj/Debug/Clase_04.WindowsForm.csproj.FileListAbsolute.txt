@@ -2,3 +2,7 @@ C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.exe.config
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.Form1.resources
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.csproj.GenerateResource.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.csprojAssemblyReference.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.exe.config
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.Form1.resources
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_04.WindowsForm\obj\Debug\Clase_04.WindowsForm.csproj.GenerateResource.cache

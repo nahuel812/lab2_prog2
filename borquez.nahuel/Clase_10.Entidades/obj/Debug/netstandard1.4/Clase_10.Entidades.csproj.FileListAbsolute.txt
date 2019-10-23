@@ -13,3 +13,12 @@ D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1
 D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.AssemblyInfo.cs
 D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.dll
 D:\borquez.n\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.pdb
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\bin\Debug\netstandard1.4\Clase_10.Entidades.deps.json
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\bin\Debug\netstandard1.4\Clase_10.Entidades.dll
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\bin\Debug\netstandard1.4\Clase_10.Entidades.pdb
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.csprojAssemblyReference.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.csproj.CoreCompileInputs.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.AssemblyInfoInputs.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.AssemblyInfo.cs
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.dll
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_10.Entidades\obj\Debug\netstandard1.4\Clase_10.Entidades.pdb

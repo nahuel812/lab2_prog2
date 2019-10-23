@@ -1,1 +1,3 @@
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Ejercicio_03\obj\Debug\Ejercicio_03.csproj.CoreCompileInputs.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Ejercicio_03\obj\Debug\Ejercicio_03.csprojAssemblyReference.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Ejercicio_03\obj\Debug\Ejercicio_03.csproj.CoreCompileInputs.cache

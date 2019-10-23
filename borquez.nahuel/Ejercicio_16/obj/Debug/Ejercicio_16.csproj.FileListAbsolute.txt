@@ -1,2 +1,4 @@
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Ejercicio_16\obj\Debug\Ejercicio_16.csprojAssemblyReference.cache
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Ejercicio_16\obj\Debug\Ejercicio_16.csproj.CoreCompileInputs.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Ejercicio_16\obj\Debug\Ejercicio_16.csprojAssemblyReference.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Ejercicio_16\obj\Debug\Ejercicio_16.csproj.CoreCompileInputs.cache

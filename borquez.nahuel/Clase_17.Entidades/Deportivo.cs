@@ -18,7 +18,9 @@ namespace Clase_17.Entidades
         public double CalcularImpuesto()
         {
             //throw new NotImplementedException();
-            return _precio * 1.28;
+            double impuesto = 0;
+            impuesto = this._precio * 0.28;
+            return impuesto;
         }
 
         public override void MostrarPrecio()

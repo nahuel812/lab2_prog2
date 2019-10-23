@@ -18,3 +18,13 @@ C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\C
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.csproj.CopyComplete
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.exe
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.pdb
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\bin\Debug\Clase_09.exe.config
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\bin\Debug\Clase_09.exe
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\bin\Debug\Clase_09.pdb
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\bin\Debug\Clase_09.Entidades.dll
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\bin\Debug\Clase_09.Entidades.pdb
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.csprojAssemblyReference.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.csproj.CoreCompileInputs.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.csproj.CopyComplete
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.exe
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_09\obj\Debug\Clase_09.pdb

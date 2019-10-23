@@ -1,1 +1,2 @@
 C:\Users\Nahuel\Desktop\laboprog2\lab2_prog2\borquez.nahuel\Clase_03\obj\Debug\Clase_03.csproj.CoreCompileInputs.cache
+D:\borqueznahuel\lab2_prog2\borquez.nahuel\Clase_03\obj\Debug\Clase_03.csproj.CoreCompileInputs.cache
