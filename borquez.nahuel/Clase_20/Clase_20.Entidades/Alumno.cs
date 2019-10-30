@@ -10,6 +10,11 @@ namespace Clase_20.Entidades
     {
         public double nota;
 
+        public Alumno()
+        {
+
+        }
+
         public Alumno(string nombre,string apellido,int edad,double nota):base(nombre,apellido,edad)
         {
             this.nota = nota;

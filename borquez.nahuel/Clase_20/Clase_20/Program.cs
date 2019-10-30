@@ -145,11 +145,14 @@ namespace Clase_20
             Empleado e1 = new Empleado("carlos", "diaz", 33, 12345, 23.445);
             Alumno a1 = new Alumno("juan", "sanchez", 23, 9);
 
+            personas.Add(p1);
+            personas.Add(e1);
+            personas.Add(a1);
+
             try
             {
                 XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Persona>));
-
-
+                
                 StreamWriter streamWriter = new StreamWriter("listaPersonas.xml");
                 xmlSerializer.Serialize(streamWriter, personas);
 
@@ -162,10 +165,8 @@ namespace Clase_20
                 Console.WriteLine(e.Message);
                 Console.ReadKey();
             }
-
-
+            
             Console.ReadLine();
-
         }
     }
 }

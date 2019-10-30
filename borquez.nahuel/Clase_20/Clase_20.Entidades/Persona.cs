@@ -9,24 +9,27 @@ using System.IO;
 
 namespace Clase_20.Entidades
 {
+    [XmlInclude(typeof(Alumno))]//atributo de clase
+    [XmlInclude(typeof(Empleado))]
+
     public class Persona: IXML
     {
         public string nombre;
         public string apellido;
         private int edad;
         private List<string> apodos;
-
+        
         public Persona()
         {
             apodos = new List<string>();
         }
-
+        
         public Persona(string nombre, string apellido, int edad) : this()
         {
             this.nombre = nombre;
             this.apellido = apellido;
             this.edad = edad;
-
+            
         }
 
         public int Edad { get { return this.edad; } set { this.edad = value; } }
