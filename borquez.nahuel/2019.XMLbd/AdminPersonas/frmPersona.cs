@@ -25,6 +25,15 @@ namespace AdminPersonas
         {
             InitializeComponent();
         }
+        public frmPersona(Persona p):this()
+        {
+            //this.miPersona = p;
+
+            this.miPersona.nombre = p.nombre;
+            this.miPersona.apellido = p.apellido;
+            this.miPersona.edad = p.edad;
+
+        }
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
