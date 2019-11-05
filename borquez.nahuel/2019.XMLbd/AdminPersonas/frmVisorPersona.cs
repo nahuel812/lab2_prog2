@@ -46,15 +46,8 @@ namespace AdminPersonas
             {
                 listaAux.Add(frm.Persona);
                 ActualizarLista();
-                /*
-                foreach (Persona item in this.listaAux)
-                {
-                    lstVisor.Items.Add(item.ToString());
-                }
-                */
-
+                
                 //bd
-
                 SqlCommand comando = new SqlCommand();
                 SqlConnection sql = new SqlConnection(Properties.Settings.Default.conexion);
 
@@ -66,9 +59,8 @@ namespace AdminPersonas
                 comando.CommandText = $"INSERT INTO Personas(nombre,apellido,edad) VALUES('{frm.Persona.nombre}','{frm.Persona.apellido}',{frm.Persona.edad})";
                 comando.ExecuteNonQuery();
                 //TEXTO Q SE LE PASA AL COMMAND TEXT values('COMILLAS SIMPLES EN LOS STRING','APELLIDO',31) // listado dentro de un try catch
-                //PROBLEMA: CONCATENAR CADENA..........
-
-
+                //PROBLEMA: CONCATENAR CADENA..
+                
                 comando.Connection.Close();
             }
             
@@ -76,13 +68,11 @@ namespace AdminPersonas
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            
-
             int indice = this.lstVisor.SelectedIndex;
             if(indice >= 0)
             {
                 Persona p = listaAux[indice];
-                frmPersona frm = new frmPersona(/*params*/);
+                frmPersona frm = new frmPersona(p);
                 frm.StartPosition = FormStartPosition.CenterScreen;
 
                 //implementar
@@ -91,7 +81,10 @@ namespace AdminPersonas
                     try
                     {
                         string consulta = $"UPDATE Personas SET nombre = '{frm.Persona.nombre}',apellido = '{frm.Persona.apellido}',edad = {frm.Persona.edad} where id = {indice+1} ";
-                        
+
+                        this.listaAux.Remove(p);
+                        this.listaAux.Add(frm.Persona);
+
                         using (SqlConnection sql = new SqlConnection(Properties.Settings.Default.conexion))
                         {
                             sql.Open();
@@ -108,6 +101,7 @@ namespace AdminPersonas
                     {
                         MessageBox.Show(a.Message);
                     }
+                    this.ActualizarLista();
                 }
             }
         }
@@ -118,6 +112,33 @@ namespace AdminPersonas
             frm.StartPosition = FormStartPosition.CenterScreen;
 
             //implementar
+            int indice = this.lstVisor.SelectedIndex;
+            
+            if (indice >= 0)
+            {
+                string consulta = $"DELETE FROM Personas WHERE id = {indice + 1}";
+                try
+                {
+                    using (SqlConnection sql = new SqlConnection(Properties.Settings.Default.conexion))
+                    {
+                        using (SqlCommand sqlCommand = new SqlCommand())
+                        {
+                            sqlCommand.Connection = sql;
+                            sqlCommand.CommandType = CommandType.Text;
+                            sqlCommand.CommandText = consulta;
+                            sql.Open();
+                            sqlCommand.ExecuteNonQuery();
+                        }
+                    }
+                }
+                catch(Exception a)
+                {
+                    MessageBox.Show(a.ToString());
+                }
+                
+                this.listaAux.Remove(listaAux[indice]);
+                this.ActualizarLista();
+            }
         }
 
         

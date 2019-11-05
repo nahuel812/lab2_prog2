@@ -27,11 +27,9 @@ namespace AdminPersonas
         }
         public frmPersona(Persona p):this()
         {
-            //this.miPersona = p;
-
-            this.miPersona.nombre = p.nombre;
-            this.miPersona.apellido = p.apellido;
-            this.miPersona.edad = p.edad;
+            this.txtNombre.Text = p.nombre;
+            this.txtApellido.Text = p.apellido;
+            this.txtEdad.Text = p.edad.ToString();
 
         }
 
@@ -40,12 +38,6 @@ namespace AdminPersonas
             //implementar
             miPersona = new Persona(this.txtNombre.Text, this.txtApellido.Text, int.Parse(this.txtEdad.Text));
             
-            /*
-            miPersona.nombre = this.txtNombre.Text;
-            miPersona.apellido = this.txtApellido.Text;
-            miPersona.edad = int.Parse(this.txtEdad.Text);
-            */
-
             this.DialogResult = DialogResult.OK;
         }
 
