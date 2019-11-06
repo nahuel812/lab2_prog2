@@ -18,7 +18,9 @@ namespace AdminPersonas
     public partial class FrmPrincipal : Form
     {
         private List<Persona> lista;
+
         //private SqlConnection sql;
+        private SqlDataAdapter adapter;
 
         private DataTable tablaPersonas;
 
@@ -30,7 +32,10 @@ namespace AdminPersonas
             this.WindowState = FormWindowState.Maximized;
 
             this.lista = new List<Persona>();
+
             //this.sql = new SqlConnection(Properties.Settings.Default.conexion);
+
+            adapter = new SqlDataAdapter();//remplazo del datareader
 
             this.tablaPersonas = new DataTable("Personas");//es la representacion en memoria de una porcion o de una tabla completa de base de datos
             //para trabajar de manera local,es independiente
@@ -147,34 +152,56 @@ namespace AdminPersonas
             try
             {
                 SqlConnection sql = new SqlConnection(Properties.Settings.Default.conexion);//string de conexion a la bd
-                sql.Open();
+                //sql.Open();
                 MessageBox.Show("Exitoso");
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = sql;
 
                 command.CommandType = CommandType.Text;
-
                 command.CommandText = "SELECT TOP 1000[id],[nombre],[apellido],[edad]FROM[personas_bd].[dbo].[personas]";//le paso el comando del management
-                
 
-                SqlDataReader dataReader;
-                //lo inicializo con execute reader
-                dataReader = command.ExecuteReader();
-                //solo puedo leerlo y seguir 
+                adapter = new SqlDataAdapter(command.CommandText,sql);
+                adapter.Fill(tablaPersonas);
 
-                while( dataReader.Read() != false)//o null, leo de a uno y lo musetro
-                {
-                    MessageBox.Show(dataReader[0].ToString() + " " + dataReader[1].ToString());//dataReader[indice o "nombre de columna"].toString() para mostrarlo
-                    
-                }
-                dataReader.Close();//cierro el reader
-               
-                sql.Close();
+                //le indico que hacer para insert, update y delete
+                adapter.InsertCommand = new SqlCommand("insert into Personas values(nombre = @nombre, apellido = @apellido, edad=  @edad) ", command.Connection);//hace un insert a la base de datos si el estado es added
+
+                adapter.UpdateCommand = new SqlCommand("update Personas set nombre = @nombre, apellido = @apellido, edad=  @edad where id = @id", command.Connection);
+
+                adapter.DeleteCommand = new SqlCommand("delete from Personas where id = @id ", command.Connection);
+
+
+                adapter.InsertCommand.Parameters.Add("@nombre",SqlDbType.VarChar,10,"nombre");
+                adapter.InsertCommand.Parameters.Add("@apellido", SqlDbType.VarChar, 10, "apellido");
+                adapter.InsertCommand.Parameters.Add("@edad", SqlDbType.Int, 10, "edad");
+
+                adapter.UpdateCommand.Parameters.Add("@nombre", SqlDbType.VarChar, 10, "nombre");
+                adapter.UpdateCommand.Parameters.Add("@apellido", SqlDbType.VarChar, 10, "apellido");
+                adapter.UpdateCommand.Parameters.Add("@edad", SqlDbType.Int, 10, "edad");
+                adapter.UpdateCommand.Parameters.Add("@id", SqlDbType.Int, 10, "id");
+
+                adapter.DeleteCommand.Parameters.Add("@id", SqlDbType.Int, 10, "id");
+
+
+                //SqlDataReader dataReader;
+                ////lo inicializo con execute reader
+                //dataReader = command.ExecuteReader();
+                ////solo puedo leerlo y seguir 
+
+                //while( dataReader.Read() != false)//o null, leo de a uno y lo musetro
+                //{
+                //    MessageBox.Show(dataReader[0].ToString() + " " + dataReader[1].ToString());//dataReader[indice o "nombre de columna"].toString() para mostrarlo
+
+                //}
+                //dataReader.Close();//cierro el reader
+
+                //sql.Close();
             }
             catch(Exception a )
             {
                 MessageBox.Show("Algo salio mal");
+                MessageBox.Show(a.ToString());
             }
         }
 
@@ -215,6 +242,34 @@ namespace AdminPersonas
             {
                 MessageBox.Show(exc.Message);
             }
+        }
+
+        private void dataTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            frmVisorDataTable frmDataTable = new frmVisorDataTable(tablaPersonas);
+            frmDataTable.ShowDialog();
+
+            if(frmDataTable.DialogResult == DialogResult.OK)
+            {
+
+            }
+
+        }
+
+        private void sincronizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                adapter.Update(tablaPersonas);
+                //si el estado es added agrega la persona del datatable a la bd
+                //si es modified usa el update
+            }
+            catch (Exception a)
+            {
+                MessageBox.Show(a.ToString());
+            }
+
         }
     }
 }

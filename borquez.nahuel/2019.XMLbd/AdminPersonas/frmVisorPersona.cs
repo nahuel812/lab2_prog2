@@ -14,7 +14,7 @@ namespace AdminPersonas
 {
     public partial class frmVisorPersona : Form
     {
-        private List<Persona> listaAux;
+        protected List<Persona> listaAux;
 
         public frmVisorPersona()
         {
@@ -32,7 +32,7 @@ namespace AdminPersonas
         public List<Persona> Personas { get { return this.listaAux; } }
 
     
-        private void btnAgregar_Click(object sender, EventArgs e)
+        protected void btnAgregar_Click(object sender, EventArgs e)
         {
             frmPersona frm = new frmPersona();
             frm.StartPosition = FormStartPosition.CenterScreen;
@@ -66,7 +66,7 @@ namespace AdminPersonas
             
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        protected void btnModificar_Click(object sender, EventArgs e)
         {
             int indice = this.lstVisor.SelectedIndex;
             if(indice >= 0)
@@ -106,7 +106,7 @@ namespace AdminPersonas
             }
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        protected void btnEliminar_Click(object sender, EventArgs e)
         {
             frmPersona frm = new frmPersona();
             frm.StartPosition = FormStartPosition.CenterScreen;
@@ -116,7 +116,7 @@ namespace AdminPersonas
             
             if (indice >= 0)
             {
-                string consulta = $"DELETE FROM Personas WHERE id = {indice + 1}";
+                string consulta = $"DELETE FROM Personas WHERE id = {indice}";
                 try
                 {
                     using (SqlConnection sql = new SqlConnection(Properties.Settings.Default.conexion))
@@ -142,7 +142,7 @@ namespace AdminPersonas
         }
 
         
-        private void ActualizarLista()
+        protected void ActualizarLista()
         {
             lstVisor.Items.Clear();
             foreach (Persona item in this.listaAux)
