@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Entidades.Externa">
+      <HintPath>..\Clase_23\Entidades.Externa.dll</HintPath>
+    </Reference>
+    <Reference Include="Entidades.Externa.Sellada">
+      <HintPath>..\Clase_23\Entidades.Externa.Sellada.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
